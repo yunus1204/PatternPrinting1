@@ -1,0 +1,33 @@
+
+
+input : 5
+output : 
+1
+0 1
+1 0 1
+0 1 0 1
+1 0 1 0 1
+
+// code
+
+#include <stdio.h>
+
+int main()
+{
+    long long int n;
+    scanf("%lld",&n);
+    int i,j;
+    for(i=1;i<=n;i++,printf("\n")){
+        for(j=1;j<=i;j++){
+            if((i+j)%2==0){
+                printf("1 ");
+            }
+            else{
+                printf("0 ");
+            }
+        }
+    }
+
+    return 0;
+}
+
